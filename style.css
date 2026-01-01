@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f0faff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(10, 40, 80, 0.6), rgba(10, 40, 80, 0.6)), 
+                url('image.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 50px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+#nama-tamu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(2, 136, 209, 0.8), 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 5px;
+}
+
+.mempelai h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.2rem;
+    margin: 20px 0;
+    color: #e3f2fd;
+}
+
+#btn-buka {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(45deg, #0288d1, #26c6da);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(2, 136, 209, 0.4);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+#btn-buka:hover {
+    background: linear-gradient(45deg, #26c6da, #0288d1);
+    transform: translateY(-8px) scale(1.05); /* Melayang lebih tinggi */
+    box-shadow: 0 15px 30px rgba(2, 136, 209, 0.6);
+    border-color: #ffffff;
+}
+
+#btn-buka:active {
+    transform: translateY(-2px);
+}
+
+.detail-acara {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff 0%, #e1f5fe 100%);
+}
+
+.title-section {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    color: #0277bd;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    margin: 40px auto;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(2, 119, 189, 0.15);
+    border-bottom: 8px solid #0288d1;
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+}
+
+.info-box h4 {
+    color: #0288d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.btn-maps {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 35px;
+    background: #0288d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(2, 136, 209, 0.4);
+}
+
+.btn-maps:hover {
+    background: #01579b;
+    transform: scale(1.05);
+}
+
+#ctrl-musik {
+    background: #0288d1;
+    border: 2px solid white;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ctrl-musik:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.fade-in {
+    animation: fadeInEffect 1.5s ease-out forwards;
+}
+
+@keyframes fadeInEffect {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.footer {
+    line-height: 1.8;
+    color: #546e7a;
+    padding: 0 20px;
+}

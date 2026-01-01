@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Ratib - Abdul Salam & Mahfudzoh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="musik-undangan" loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+    <button id="ctrl-musik" onclick="toggleMusik()" style="position: fixed; bottom: 20px; right: 20px; z-index: 999; display: none; background: rgba(209, 160, 84, 0.8); color: white; border: none; padding: 10px; border-radius: 50%; cursor: pointer;">
+        🔇
+    </button>
+
+    <section class="hero">
+        <div class="content">
+            <p class="greeting">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+            <h1 id="nama-tamu">Tamu Undangan</h1> 
+            </p>
+
+            
+           <button id="btn-buka" onclick="bukaUndangan()">
+    <i class="fas fa-envelope-open-text" style="margin-right: 10px;"></i> Buka Undangan
+</button>
+        </div>
+    </section>
+
+    <section id="konten-utama" class="detail-acara" style="display: none;">
+    <div class="isi">
+        <h2 style="font-family: 'Noto Sans Arabic', sans-serif; color: #1a5f7a;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</h2>
+        <h3 class="title-section">Assalamu'alaikum Wr. Wb</h3>
+            <p>Dengan memohon rahmat Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara kami:</p>
+            
+            <div class="info-box">
+                <h4>Waktu</h4>
+                <p><strong>Minggu, 12 Desember 2024</strong></p>
+                <p>Pukul 19.30 WIB (Ba'da Isya)</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Lokasi</h4>
+                <p><strong>Kediaman Keluarga Bapak Abdul Salam</strong></p>
+                <p>Jl. Kabelmas VI RT.004/RW.030 No.12 A, Kaliabang Tengah, Bekasi Utara</p>
+                
+                <a href="https://maps.app.goo.gl/7ixNaQYMA2wmqsDs9" target="_blank" class="btn-maps">Lihat Lokasi di Maps</a>
+            </div>
+
+            <div class="footer">
+                <p>Acara ini diselenggarakan sebagai bentuk ikhtiar dan doa bersama agar diberikan kelancaran, keselamatan, dan keberkahan dalam pelaksanaan ibadah haji.
+                <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.
+                <p>Wassalamu'alaikum Wr. Wb.</p>
+                <h2 style="font-family: 'sans-serif', cursive; color: #1a5f7a;">Salam Kami, Keluarga Abdul Salam Z. & Mahfudzoh </h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
