@@ -84,7 +84,28 @@ body, html {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+/* Styling dasar untuk teks salam */
+.salam {
+    font-family: 'Montserrat', sans-serif;
+    color: #0277bd;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+    .salam {
+        font-size: 1.2rem !important;
+        padding: 0 15px;
+    }
+    
+    .title-section {
+        font-size: 1.8rem !important;
+    }
 
+    h2 {
+        font-size: 1.5rem !important;
+    }
+}
 .info-box {
     margin: 40px auto;
     margin-bottom: 60px;
@@ -155,4 +176,5 @@ body, html {
     line-height: 1.8;
     color: #546e7a;
     padding: 0 20px;
+
 }
